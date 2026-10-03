@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zorvexa - Cyber Simulation</title>
+  <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<rect width='100' height='100' fill='%23020403'/>
+<text x='50' y='68' font-size='65' text-anchor='middle' fill='%2300ff66'>Z</text>
+</svg>">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body><div class="brand-tag">
+    ZORVEXA // VIRTUAL CYBER LAB
+</div>
+
+    <!-- LOGIN -->
+
+    <section id="loginPage" class="page">
+
+        <div class="brand">
+
+            <h1>ZORVEXA</h1>
+
+            <p>CYBER SIMULATION</p>
+
+        </div>
+
+
+        <div class="login-box">
+
+            <div class="status">
+                ● SYSTEM ONLINE
+            </div>
+
+            <h2>SECURE LOGIN</h2>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+            >
+
+            <input
+                type="password"
+                id="pin"
+                placeholder="Enter demo PIN"
+            >
+
+            <button onclick="login()">
+                ENTER ZORVEXA
+            </button>
+
+            <p class="notice">
+                Fictional simulation only
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PREMIUM DASHBOARD -->
+
+    <section id="dashboard" class="page hidden">
+
+        <div class="dashboard-header">
+
+            <div>
+
+                <h1>ZORVEXA</h1>
+
+                <p class="subtitle">
+                    SIMULATION CONTROL CENTER
+                </p>
+
+            </div>
+
+            <div class="online">
+                ● ONLINE
+            </div>
+
+        </div>
+      <div class="system-bar">
+
+    <span>● SYSTEM ONLINE</span>
+
+    <span>SECURITY: ACTIVE</span>
+
+    <span id="liveClock">00:00:00</span>
+
+      </div>
+
+
+        <div class="warning">
+
+            ⚠ FICTIONAL SIMULATION —
+            NO REAL ACCOUNT OR DEVICE ACCESS
+
+        </div>
+
+
+
+        <!-- USER PANEL -->
+
+        <div class="user-panel">
+
+            <div>
+
+                <span>ACTIVE USER</span>
+
+                <strong id="displayUsername">
+                    DEMO USER
+                </strong>
+
+            </div>
+
+            <div>
+
+                <span>SESSION</span>
+
+                <strong>SECURE</strong>
+
+            </div>
+
+            <div>
+
+                <span>MODE</span>
+
+                <strong>SIMULATION</strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SYSTEM STATS -->
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <span>SYSTEM</span>
+
+                <strong>ONLINE</strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>MODULES</span>
+
+                <strong>08 ACTIVE</strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>SECURITY</span>
+
+                <strong>SAFE</strong>
+
+            </div>
+
+        </div>
+
+
+
+        <h2 class="section-title">
+            SIMULATION MODULES
+        </h2>
+
+
+
+        <div class="options">
+
+            <button onclick="runSimulation('Number')">
+                📱 Number Simulation
+            </button>
+
+            <button onclick="runSimulation('Instagram')">
+                📸 Instagram Simulation
+            </button>
+
+            <button onclick="runSimulation('Snapchat')">
+                👻 Snapchat Simulation
+            </button>
+
+            <button onclick="runSimulation('Facebook')">
+                📘 Facebook Simulation
+            </button>
+
+            <button onclick="runSimulation('Chat')">
+                💬 Chat Simulation
+            </button>
+
+            <button onclick="runSimulation('Photo')">
+                🖼️ Photo Simulation
+            </button>
+
+            <button onclick="runSimulation('Video')">
+                🎥 Video Simulation
+            </button>
+
+            <button onclick="runSimulation('History')">
+                🕘 History Simulation
+            </button>
+
+        </div>
+
+
+
+        <!-- TERMINAL -->
+
+        <div id="terminal"></div>
+      <div class="history-panel">
+
+    <h2>ACTIVITY HISTORY</h2>
+
+    <div id="historyList">
+        <p class="empty-history">
+            No simulations run yet.
+        </p>
+    </div>
+
+    <button onclick="clearHistory()" class="clear-history">
+        CLEAR HISTORY
+    </button>
+
+      </div>
+
+
+
+        <button class="logout" onclick="logout()">
+            EXIT ZORVEXA
+        </button>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
